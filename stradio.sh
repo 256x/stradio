@@ -7,6 +7,7 @@ declare -A GENRE_MAP=(
   ["Alternative Rock"]="alternative,alt rock,indie,grunge"
   ["Blues"]="blues,delta blues,electric blues,R&B"
   ["Broadway"]="broadway,musicals,showtunes"
+  ["Chill"]="chill,relax,cafe,coffee"
   ["Classical"]="classical,orchestral,symphony,baroque"
   ["Country"]="country,classic country,new country"
   ["Dance"]="dance,electronic,edm,club"
@@ -28,7 +29,7 @@ declare -A GENRE_MAP=(
 
 # ジャンル選択
 select_category() {
-  local genres=("Adult Contemporary" "Alternative Rock" "Blues" "Broadway" "Classical" "Country" "Dance" "Holiday Music" "Jazz" "Latin" "Oldies" "Pop Hits" "Reggae" "Rock" "Soundtracks" "Talk" "World Music" "80s" "90s" "00s" "10s")
+  local genres=("Adult Contemporary" "Alternative Rock" "Blues" "Broadway" "Chill" "Classical" "Country" "Dance" "Holiday Music" "Jazz" "Latin" "Oldies" "Pop Hits" "Reggae" "Rock" "Soundtracks" "Talk" "World Music" "80s" "90s" "00s" "10s")
   
   # 手動でリスト表示
   for genre in "${genres[@]}"; do
